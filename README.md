@@ -12,7 +12,7 @@ TPs will run on docker containers.
 
 A note on the `Dockerfile` included: You can use it as a base to run other custom built TPs in node.
 
-###xo-processor
+### xo-processor
 
 The TP will run on a docker container, if you wish to run more TPs locally, you can do it by executing:
 
@@ -21,7 +21,7 @@ The TP will run on a docker container, if you wish to run more TPs locally, you 
 `http://localhost:4004` is the address of the validator in this example (defined in `docker-compose.yml`)
 
 
-###hello-processor
+### hello-processor
 Small transaction processor included as a minimal example.
 
 It will also run on a docker container, but if you with to attach another one, you can do so by running:
@@ -36,8 +36,8 @@ It will also run on a docker container, but if you with to attach another one, y
 According to Sawtooth, the `rest-api` they provide does not allow CORS. In order to solve this, there's a small `proxy`
 application included in this project.
 
-###Running the proxy
+### Running the proxy
 `yarn proxy`
 
-###Running the app
+### Running the app
 `yarn dev`
