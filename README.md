@@ -1,7 +1,7 @@
 # sawtooth-js-example
 An implementation of sawtooth's XO Transaction Processor in JavaScript, including a Vue.JS client.
 
-#Installation
+# Installation
 
 Run `docker-compose up -d` to get the systems up and running.
 Run `yarn install` to install all dependencies.
