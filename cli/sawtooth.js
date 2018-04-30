@@ -66,19 +66,6 @@ export default {
   },
 
   async sendBatches (batches) {
-    /*
-
-        axios.post('http://localhost:3000/batches?wait',
-          batches,
-          {
-            responseType: 'arraybuffer',
-            headers: { 'Content-Type': 'application/octet-stream' }
-          }
-        ).then((data) => {
-          console.log(data);
-        });
-    */
-
     const res = await request.post({
       url: 'http://localhost:3000/batches?wait',
       body: batches,
