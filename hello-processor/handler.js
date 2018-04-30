@@ -29,10 +29,6 @@ class Handler extends TransactionHandler {
     );
 
     return context.setState({ [address]: name }, 500);
-
-    //let header = transactionProcessRequest.header;
-    //let signerKey = header.signerPublicKey;
-    //throw new InvalidTransaction('Invalid Action.');
   }
 }
 
