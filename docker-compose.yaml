@@ -71,6 +71,15 @@ services:
       - validator
     entrypoint: sawtooth-rest-api -C tcp://validator:4004 --bind rest-api:8008
 
+  rest-api-proxy:
+    build: .
+    container_name: rest-api-proxy
+    ports:
+      - "3000:3000"
+    depends_on:
+      - rest-api
+    entrypoint: yarn proxy
+
   shell:
     image: hyperledger/sawtooth-all:1.0
     container_name: sawtooth-shell-default
