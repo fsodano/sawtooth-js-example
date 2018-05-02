@@ -6,7 +6,7 @@
   "scripts": {
     "start-xo": "node xo-processor/index.js",
     "start-hello": "node hello-processor/index.js",
-    "proxy": "node proxy.js",
+    "proxy": "node proxy/proxy.js",
     "dev": "webpack-dev-server --hot --mode=development"
   },
   "author": "",

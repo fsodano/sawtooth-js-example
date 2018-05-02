@@ -12,7 +12,7 @@ let allowCrossDomain = function (req, res, next) {
 
 app.use(allowCrossDomain);
 app.use('/', proxy(() => { return true; }, {
-  target: 'http://localhost:8008',
+  target: 'http://rest-api:8008',
   changeOrigin: false,
   onProxyRes: async (proxyRes, req, res) => {
     proxyRes.statusCode = 200;
