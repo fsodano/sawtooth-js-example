@@ -13,14 +13,15 @@ export default {
     const rawGame = await sawtooth.queryAddress(api.getGameAddress(gameName));
 
     let gameCsv;
+    let rawTiles = '---------';
+
     try {
       gameCsv = atob(rawGame.data.data);
     } catch (e) {
-      gameCsv = `${gameName},---------,GAME-NOT-STARTED`;
+      gameCsv = `${gameName},${rawTiles},GAME-NOT-STARTED`;
     }
 
     const game = { tiles: {} };
-    let rawTiles = '---------';
     [game.name, rawTiles, game.state] = gameCsv.split(',');
 
     [
