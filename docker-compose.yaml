@@ -49,7 +49,6 @@ services:
       - validator
     volumes:
       - './:/var/www'
-      - /var/www/node_modules/
       - /var/www/node_modules
     entrypoint: yarn start-xo tcp://validator:4004
 
