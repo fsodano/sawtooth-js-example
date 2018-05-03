@@ -34,13 +34,6 @@
                 <input type="button" value="Delete Game" v-on:click="deleteGame">
             </div>
         </div>
-
-        <div class="container">
-            <h1>Blockchain Hello</h1>
-
-            <input type="text" placeholder="Enter your name" v-model="helloName"/>
-            <input type="button" value="Say Hello!" v-on:click="sayHello"/>
-        </div>
     </div>
 
 </template>
@@ -48,7 +41,6 @@
 <script>
   import 'spectre.css';
   import xo from './xo/xo.js';
-  import hello from './hello/hello.js';
 
   export default {
     data () {
@@ -88,10 +80,6 @@
         } else {
           this.lastPlayer = 2;
         }
-      },
-      sayHello () {
-        console.log('greeting ' + this.helloName);
-        hello.sayHello(this.helloName);
       }
     }
   };
